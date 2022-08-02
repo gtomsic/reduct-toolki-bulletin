@@ -4,6 +4,7 @@ import { selectAllPosts } from "./postsSlice";
 
 import PostAuthor from "./PostAuthor";
 import TimeAgo from "./TimeAgo";
+import RactionsButton from "./RactionsButton";
 
 import React from "react";
 
@@ -21,6 +22,7 @@ const PostList = () => {
         <PostAuthor userId={post.userId} />
         <TimeAgo timestamp={post.date} />
       </p>
+      <RactionsButton post={post} />
     </article>
   ));
   return (
